@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid black;
+    padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+.button__text {
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+
+.button__icon-wrapper {
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    width: 35px;
+    height: 35px;
+    border-radius: 2.5rem;
+}
+
+.button__icon {
+    color: white;
+    position: absolute;
+    transition: transform 0.2s ease-in-out;
+}
+
+.icon-arrow {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-eye {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+}
+
+.button:hover .icon-arrow {
+    transform: translate(-50%, 200%);
+}
+
+.button:hover .icon-eye {
+    transform: translate(-50%, -50%);
+}
